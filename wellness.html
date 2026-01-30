@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WellSpring Journal | Simple, Honest Health</title>
+  <meta name="description" content="A calm, evidence‑aware health blog about wellness, nutrition, fitness, and mental balance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7faf9;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --brand:#0ea5a4;
+      --card:#ffffff;
+      --line:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--ink);
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.6;
+    }
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; display:block}
+
+    /* Header */
+    header{
+      background:linear-gradient(180deg, #e6fffb 0%, #f7faf9 70%);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      max-width:1100px; margin:auto; padding:18px 20px;
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+    }
+    .logo{
+      font-family:"Playfair Display", serif; font-weight:700; font-size:1.4rem;
+      letter-spacing:.3px;
+    }
+    .nav a{margin-left:14px; color:var(--muted); font-weight:500}
+    .nav a:hover{color:var(--ink)}
+
+    /* Hero */
+    .hero{
+      max-width:1100px; margin:0 auto; padding:60px 20px 30px;
+      display:grid; grid-template-columns:1.2fr .8fr; gap:32px;
+    }
+    .hero h1{
+      font-family:"Playfair Display", serif; font-size:2.6rem; margin:.2em 0 .4em;
+    }
+    .hero p{color:var(--muted); font-size:1.05rem}
+    .hero .card{
+      background:var(--card); border:1px solid var(--line); border-radius:14px;
+      padding:22px; box-shadow:0 10px 30px rgba(0,0,0,.04);
+    }
+
+    /* Layout */
+    main{max-width:1100px; margin:auto; padding:20px}
+    .grid{
+      display:grid; grid-template-columns:2fr 1fr; gap:28px;
+    }
+
+    /* Post cards */
+    .post{
+      background:var(--card); border:1px solid var(--line); border-radius:14px;
+      padding:22px; margin-bottom:22px;
+    }
+    .post h2{font-family:"Playfair Display", serif; margin:.2em 0 .3em}
+    .meta{color:var(--muted); font-size:.9rem; margin-bottom:10px}
+    .tag{display:inline-block; background:#ecfeff; color:#0369a1; padding:4px 10px; border-radius:999px; font-size:.75rem; margin-right:6px}
+    .readmore{color:var(--brand); font-weight:600}
+
+    /* Sidebar */
+    aside .box{
+      background:var(--card); border:1px solid var(--line); border-radius:14px;
+      padding:20px; margin-bottom:20px;
+    }
+    .box h3{margin-top:0}
+    .newsletter input{
+      width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--line); margin-bottom:10px
+    }
+    .btn{
+      display:inline-block; background:var(--brand); color:white; border:none;
+      padding:10px 14px; border-radius:10px; font-weight:600; cursor:pointer
+    }
+
+    /* Footer */
+    footer{
+      border-top:1px solid var(--line); padding:28px 20px; color:var(--muted)
+    }
+    footer .wrap{max-width:1100px; margin:auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">WellSpring Journal</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Nutrition</a>
+        <a href="#">Fitness</a>
+        <a href="#">Mind</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Simple, honest health — for real life</h1>
+      <p>
+        Welcome to <strong>WellSpring Journal</strong>, a quiet corner of the internet
+        where science meets compassion. We explore nutrition, movement, sleep,
+        and mental balance without hype — just thoughtful guidance you can use.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Editor’s Note</h3>
+      <p class="meta">Updated weekly • Evidence‑aware • Human‑first</p>
+      <p>
+        Health is not perfection. It’s a long conversation with your body.
+        Our goal is to make that conversation calmer, clearer, and kinder.
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <div class="grid">
+      <section>
+        <article class="post">
+          <span class="tag">Nutrition</span>
+          <h2>The quiet power of consistent meals</h2>
+          <div class="meta">By Dr. A. Collins • 6 min read</div>
+          <p>
+            Skipping meals often feels productive — until energy crashes arrive.
+            Consistency in eating times can stabilize blood sugar, mood, and focus
+            more than any trendy diet ever could.
+          </p>
+          <a class="readmore" href="#">Read more →</a>
+        </article>
+
+        <article class="post">
+          <span class="tag">Fitness</span>
+          <h2>Walking: the most underestimated exercise</h2>
+          <div class="meta">By J. Rivera • 5 min read</div>
+          <p>
+            You don’t need extreme workouts to protect your heart and mind.
+            Daily walking improves circulation, lowers stress hormones,
+            and gently strengthens the entire body.
+          </p>
+          <a class="readmore" href="#">Read more →</a>
+        </article>
+
+        <article class="post">
+          <span class="tag">Mental Health</span>
+          <h2>Why rest is not laziness</h2>
+          <div class="meta">By L. Okafor • 7 min read</div>
+          <p>
+            Modern culture praises exhaustion. Biology does not.
+            True recovery is an active process — one that protects your immune
+            system, creativity, and emotional resilience.
+          </p>
+          <a class="readmore" href="#">Read more →</a>
+        </article>
+      </section>
+
+      <aside>
+        <div class="box">
+          <h3>About this blog</h3>
+          <p>
+            WellSpring Journal is written by clinicians, coaches, and everyday
+            people who value sustainable health over quick fixes.
+          </p>
+        </div>
+
+        <div class="box newsletter">
+          <h3>Weekly Wellness Letter</h3>
+          <p class="meta">No spam. Just clarity.</p>
+          <input type="email" placeholder="you@example.com" />
+          <button class="btn">Subscribe</button>
+        </div>
+
+        <div class="box">
+          <h3>Popular topics</h3>
+          <p class="meta">Sleep • Gut health • Stress • Longevity</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© 2026 WellSpring Journal</div>
+      <div>Disclaimer: Content is educational, not medical advice.</div>
+    </div>
+  </footer>
+</body>
+</html>
